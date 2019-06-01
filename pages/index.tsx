@@ -1,12 +1,9 @@
-import Link from 'next/link';
+import Layout from '../components/MyLayout';
 
-const Index = () => (
-  <div>
-    <Link href="/about">
-      <button>About Page</button>
-    </Link>
-    <p>Hello Next.ts</p>
-  </div>
-);
-
-export default Index;
+export default function Index() {
+  return (
+    <Layout>
+      <p>Hello Next.ts</p>
+    </Layout>
+  );
+}
